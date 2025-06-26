@@ -42,7 +42,7 @@ const LoaderMoolah = () => {
   }, []);
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, color: 'rgba(76,59,41,255)' }}>
       <ImageBackground
         style={{ flex: 1, width: '100%', height: '100%' }}
         source={require('../smartasstszoo/smartimageszoo/zoobackgroundmoolah.png')}
@@ -71,7 +71,7 @@ const LoaderMoolah = () => {
 
         <ActivityIndicator
           size={'large'}
-          color="#fff"
+          color="#524639"
           style={{
             position: 'absolute',
             top: height * 0.4,
