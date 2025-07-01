@@ -59,7 +59,7 @@ const Smartsplashzoo = () => {
             >
                 <TouchableOpacity
                     style={zoo.button}
-                    onPress={() => navigation.navigate('Smartmiddlezoo')}
+                    onPress={() => navigasdcdsction.navvdvdscigate('Smartmiddlezoo')}
                 >
                     <Text style={zoo.buttonText}>Continue</Text>
                 </TouchableOpacity>
