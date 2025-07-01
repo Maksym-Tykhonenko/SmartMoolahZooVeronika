@@ -314,7 +314,19 @@ function App() {
   // OneSignal ініціалізація
   OneSignal.initialize('0751e506-6a37-4255-9586-ac2792a7c9a1');
   //OneSignal.Debug.setLogLevel(OneSignal.LogLevel.Verbose);
-  //
+  
+    // Встановлюємо цей ID як OneSignal External ID
+    useEffect(() => {
+        if (timeStampUserId) {
+            console.log(
+                'OneSignal.login із таймштампом:',
+                timeStampUserId,
+                'полетів',
+            );
+            OneSignal.login(timeStampUserId);
+        }
+    }, [timeStampUserId]);
+    
   // event push_open_browser & push_open_webview
   const pushOpenWebViewOnce = useRef(false); // Стан, щоб уникнути дублювання
 
