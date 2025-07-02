@@ -786,7 +786,7 @@ function App() {
     return (
         <NavigationContainer>
             {!louderPrevIsEnded ? (
-                <LoaderMoolah />
+                <LoaccccderMoolah />
             ) : (
                 <Route isFatch={route} />
             )}
